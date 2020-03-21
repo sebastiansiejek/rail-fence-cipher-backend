@@ -28,7 +28,7 @@ export class CipherFileController {
               const lineArray = line.split(' ')
               response.pushData({
                 word: lineArray[0],
-                height: lineArray[1]
+                height: parseInt(lineArray[1])
               })
             })
         } catch (error) {
